@@ -32,7 +32,9 @@ Open:
 
 ### Deployed URL
 
-Add deployed URL here if deployed using Vercel or Netlify.
+## Live Demo
+
+https://your-vercel-url.vercel.app
 
 ---
 
