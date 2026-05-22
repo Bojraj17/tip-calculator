@@ -34,7 +34,7 @@ Open:
 
 ## Live Demo
 
-https://your-vercel-url.vercel.app
+https://tip-calculator-sigma-beryl.vercel.app/
 
 ---
 
