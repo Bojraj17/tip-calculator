@@ -4,17 +4,17 @@
 
 ### Requirements
 
-- Node.js installed
-- npm installed
-- Git installed
+- Node.js
+- npm
+- Git
 
-### Run locally
+### Steps to run locally
 
 Clone the repository:
 
 git clone https://github.com/Bojraj17/tip-calculator.git
 
-Go to project directory:
+Open the project folder:
 
 cd tip-calculator
 
@@ -22,17 +22,15 @@ Install dependencies:
 
 npm install
 
-Start development server:
+Start the development server:
 
 npm run dev
 
-Open:
+Open in browser:
 
- http://localhost:5173/
+http://localhost:5173/
 
-### Deployed URL
-
-## Live Demo
+### Live Demo
 
 https://tip-calculator-sigma-beryl.vercel.app/
 
@@ -40,61 +38,61 @@ https://tip-calculator-sigma-beryl.vercel.app/
 
 ## 2. Stack & design choices
 
-### Stack Choice
+### Why I chose this stack
 
-I chose React with Vite and Tailwind CSS because React provides simple state management for live calculations and Vite offers a fast development environment with instant reloads. Tailwind CSS helped me build a responsive interface quickly without writing large custom CSS files.
+I used React with Vite because React makes handling live updates and state changes simple and efficient. Vite provides a fast development environment with quick refresh during development. I used Tailwind CSS because it helped me create a responsive UI quickly without writing large amounts of custom CSS.
 
-### Design Decision 1
+### Design decision 1
 
-I used a single centered card layout with grouped sections for bill input, tip selection, people count, and results. This reduces visual clutter and keeps the interaction flow simple, especially on mobile devices.
+I used a centered card-based layout instead of spreading the inputs across the full page. This keeps the interface focused and reduces visual clutter, especially on smaller mobile screens.
 
-### Design Decision 2
+### Design decision 2
 
-The active tip percentage button is visually highlighted using a dark background and white text. This gives immediate feedback about the selected preset and improves usability while switching between different tip percentages.
+The selected tip percentage button is highlighted with a dark background and white text so users can immediately identify the active preset. This improves interaction feedback and makes changing tip values easier.
 
 ---
 
 ## 3. Responsive & accessibility
 
-### Responsive Behavior
+### Responsive behavior
 
-On a 360px mobile screen, the layout stacks vertically with enough spacing between inputs and buttons to remain touch friendly. Inputs and buttons take full width to improve usability on smaller screens.
+On a 360px mobile screen, all inputs and buttons stack vertically with proper spacing so they remain touch friendly and easy to use.
 
-On a 1440px laptop screen, the calculator remains centered with a fixed maximum width to avoid excessive stretching and maintain readability.
+On a 1440px laptop screen, the calculator remains centered with a maximum width to prevent the layout from stretching too much across the screen.
 
-### Accessibility Consideration Implemented
+### Accessibility handled
 
-I added clear labels for all input fields and ensured keyboard navigation works naturally using the default tab order. Focus states are also visible for interactive elements.
+I added clear labels for all input fields and ensured keyboard navigation works properly using the default tab order. Interactive elements also have visible focus states.
 
-### Accessibility Consideration Skipped
+### Accessibility skipped
 
-I did not add full screen-reader optimization using ARIA live regions for dynamically updating calculations. With more time, I would improve screen-reader announcements for live result updates.
+I did not implement advanced screen-reader announcements for dynamically changing results. With more time, I would improve accessibility further using ARIA live regions.
 
 ---
 
 ## 4. AI usage
 
-I used ChatGPT to:
+I used AI tools like Claude and GitHub Copilot during development for:
 
-- Generate the initial React component structure
-- Improve validation handling
-- Suggest responsive layout ideas
-- Refine README and ANSWERS documentation
+- Initial React component structure
+- Validation logic suggestions
+- Responsive layout ideas
+- README and ANSWERS formatting assistance
 
-One specific change I made to the AI-generated output was improving the validation behavior. The original implementation showed calculation updates even during invalid input states. I modified the logic so invalid fields stop calculations and show zeroed results instead, creating a smoother and less confusing user experience.
+One thing I changed from the AI-generated code was the validation behavior. Initially, calculations continued updating even when invalid input values were entered. I modified the logic so calculations stop and show safe default values when validation errors exist. This created a cleaner and less confusing user experience.
 
-I also adjusted the layout spacing and button styling manually to improve readability on smaller mobile screens.
+I also adjusted spacing and layout manually to improve readability and usability on smaller screens.
 
 ---
 
 ## 5. Honest gap
 
-One area that still needs improvement is advanced accessibility support and more polished animations for state changes and validation feedback.
+One area that still needs improvement is accessibility polish and smoother UI transitions.
 
 With another day, I would:
 
-- Add ARIA live regions for screen readers
-- Improve animation transitions for errors and updates
+- Add better screen-reader support
+- Improve animation transitions for validation messages
 - Add automated tests for edge cases
-- Improve handling for pasted malformed numeric input
-- Deploy the application and add CI checks
+- Improve handling for malformed pasted input
+- Add more polished UI interactions and animations
